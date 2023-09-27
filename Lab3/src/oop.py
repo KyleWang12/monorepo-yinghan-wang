@@ -38,8 +38,9 @@ class Image:
         self.m_Pixels = [value] * (self.m_width * self.m_height * self.m_colorChannels)
 
 
-class Texture(Image):
-    pass
+class Texture():
+    def __init__(self, w, h):
+        self.image = Image(w, h)
 
 
 def main():

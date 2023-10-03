@@ -6,31 +6,32 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Color Selection
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: To change the color of the pencil to the desired color for drawing on the canvas.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The program is running and is in a responsive state.
+The drawing canvas is active and ready to receive input.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: Pressing one of the number keys (1 through 8) on the keyboard.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: The user decides to change the color they're drawing with. Then the user presses a number key indicating a specific color. The system then changes the current drawing color to the selected color.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: The user presses a key that is not in the range of 1 through 8. The color does not change, and there might be an optional visual or auditory cue indicating an invalid input.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: High
 
-**When available**: *the targeted release that covers this use case*
+**When available**: First release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: The primary actor communicates with the system through the keyboard. The system should respond within 1 second of the keyboard event.
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: It might be worth exploring the use of a color wheel or a more advanced color picker for more artistic flexibility.
 
 <hr>
 

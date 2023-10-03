@@ -6,31 +6,36 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Canvas Clearing
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: To clear the entire canvas and fill it with the last selected color.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The program is running and is in a responsive state.
+The drawing canvas is active and ready to receive input.
+The user has selected a color (default or any of the available colors).
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**: Pressing the space key on the keyboard.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: The user decides to clear the current drawings and start afresh.
+The user presses the space key.
+The system clears all the drawings from the canvas.
+The system fills the entire canvas with the last color selected by the user.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: If the program becomes unresponsive, the user may need to restart the program or address the root cause of the unresponsiveness.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: High
 
-**When available**: *the targeted release that covers this use case*
+**When available**: First release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: The primary actor communicates with the system through the keyboard. The system should respond within 1 second of the keyboard event.
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: May consider layer management or history tracking.
 
 <hr>
 

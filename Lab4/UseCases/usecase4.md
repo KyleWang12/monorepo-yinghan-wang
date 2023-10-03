@@ -6,31 +6,37 @@
 
 <hr>
 
-**Use Case**: *use-case-title*
+**Use Case**: Drawing
 
-**Primary Actor**: *primary-actor*
+**Primary Actor**: User
 
-**Goal in Context**: *the aim of the primary-actor in a particular circumstance*
+**Goal in Context**: To draw on the canvas by changing pixel colors as the mouse is dragged.
 
-**Preconditions**: *conditions that must be true before the scenario may play out*
+**Preconditions**: The program is running and is in a responsive state.
+The drawing canvas is active and ready to receive input.
+The user has selected a color.
 
-**Trigger**: *an action or actions that initiate the scenario*
+**Trigger**:  Pressing and holding the left mouse button while moving the mouse over the canvas.
   
-**Scenario**: *an enumerated list of steps describing the actions and interactions of the primary actor with the system*
+**Scenario**: The user decides to draw on the canvas.
+The user selects a color by pressing one of the number keys if they want a specific color.
+The user presses and holds the left mouse button.
+As the user drags the mouse across the canvas, the pixels underneath change to the selected color, mimicking the behavior of a pencil drawing on paper.
+The user releases the mouse button when they finish drawing.
  
-**Exceptions**: *errors or faults that may occur during the scenario. Should include remedy/corrective action taken by the primary actor*
+**Exceptions**: If the user tries to draw outside the boundaries of the canvas, the system should ensure no changes occur outside the canvas area.
 
-**Priority**: *relative importance of this use case compared to other use cases*
+**Priority**: High
 
-**When available**: *the targeted release that covers this use case*
+**When available**: First release
 
-**Channel to actor**: *the means through which the primary actor and the system communicate*
+**Channel to actor**: The primary actor communicates with the system using both the mouse for drawing and the keyboard for selecting colors. The system should respond immediately to mouse movements and clicks.
 
-**Secondary Actor**: *any other actors – people or systems – that may be involved in the scenario*
+**Secondary Actor**: N/A
 
-**Channels to Secondary Actors**: *the means through which any secondary actors may interact with the system or other actors*
+**Channels to Secondary Actors**: N/A
 
-**Open Issues**: *notes, concerns, or other materials*
+**Open Issues**: May consider different types of pencil.
 
 <hr>
 
